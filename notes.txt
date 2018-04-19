@@ -1,0 +1,105 @@
+19/4/18
+Version 2 of the Alexa Skills Kit SDK for Node.js released 18/4/18
+
+https://stackoverflow.com/questions/22724921/do-i-need-to-do-git-init-before-doing-git-clone-on-a-project
+
+https://www.atlassian.com/git/tutorials/setting-up-a-repository
+
+Create a new repository at git@github.com:paddy10tellys/npm-v2ask-pkg.git
+
+pmy@pmy-H110M-R:~$ git clone git@github.com:paddy10tellys/npm-v2ask-pkg.git
+Cloning into 'npm-v2ask-pkg'...
+
+pmy@pmy-H110M-R:~$ cd npm-v2ask-pkg
+
+pmy@pmy-H110M-R:~/npm-v2ask-pkg$ subl notes.txt
+
+https://codeburst.io/how-to-test-javascript-with-mocha-the-basics-80132324752e
+
+pmy@pmy-H110M-R:~$ sudo npm install -g mocha
+[sudo] password for pmy:
+/usr/bin/mocha -> /usr/lib/node_modules/mocha/bin/mocha
+/usr/bin/_mocha -> /usr/lib/node_modules/mocha/bin/_mocha
++ mocha@5.1.1
+added 24 packages in 1.187s
+
+Follow https://github.com/alexa/alexa-skills-kit-sdk-for-nodejs/wiki/Developing-Your-First-Skill
+
+https://github.com/alexa/alexa-skills-kit-sdk-for-nodejs/wiki/Setting-Up-The-ASK-SDK
+
+https://docs.npmjs.com/getting-started/creating-node-modules
+
+pmy@pmy-H110M-R:~/npm-v2ask-pkg$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (npm-v2ask-pkg)
+version: (1.0.0)
+description: First look at v2 of the Alexa Skills Kit SDK for Node.js released 18/4/18
+entry point: (index.js)
+test command: mocha
+git repository: (https://github.com/paddy10tellys/npm-v2ask-pkg.git)
+keywords: alexa, sdk v2, demo
+author: paddy10tellys
+license: (ISC)
+About to write to /home/pmy/npm-v2ask-pkg/package.json:
+
+{
+  "name": "npm-v2ask-pkg",
+  "version": "1.0.0",
+  "description": "First look at v2 of the Alexa Skills Kit SDK for Node.js released 18/4/18",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paddy10tellys/npm-v2ask-pkg.git"
+  },
+  "keywords": [
+    "alexa",
+    "sdk",
+    "v2",
+    "demo"
+  ],
+  "author": "paddy10tellys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paddy10tellys/npm-v2ask-pkg/issues"
+  },
+  "homepage": "https://github.com/paddy10tellys/npm-v2ask-pkg#readme"
+}
+
+
+Is this ok? (yes)
+
+pmy@pmy-H110M-R:~/npm-v2ask-pkg$ npm install --save ask-sdk
+npm notice created a lockfile as package-lock.json. You should commit this file.
++ ask-sdk@2.0.0
+added 19 packages in 2.012s
+
+
+pmy@pmy-H110M-R:~/npm-v2ask-pkg$ npm install --save ask-sdk-dynamodb-persistence-adapter
++ ask-sdk-dynamodb-persistence-adapter@2.0.0
+updated 1 package in 1.275s
+
+pmy@pmy-H110M-R:~/npm-v2ask-pkg$ npm config ls
+; cli configs
+metrics-registry = "https://registry.npmjs.org/"
+scope = ""
+user-agent = "npm/5.6.0 node/v8.11.1 linux x64"
+
+; node bin location = /usr/bin/node
+; cwd = /home/pmy/npm-v2ask-pkg
+; HOME = /home/pmy
+; "npm config ls -l" to show all defaults.
+
+
+
